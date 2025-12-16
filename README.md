@@ -9,12 +9,12 @@ Map<String, Integer> representing the count of how many times each IP appears.
 • Key Concept: HashMap, getOrDefault.
 
 ##Code:
+
 package Collections.Maps.HashMap;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-
 public class CountIPAddress {
     public static void main(String[] args) {
         List<String> list = List.of(
@@ -45,7 +45,6 @@ package Collections.Set.HashSet;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
-
 public class MailSubscription {
     public static void main(String[] args) {
         List<String> newsletterMails = List.of(
@@ -60,7 +59,6 @@ public class MailSubscription {
                 "frank@gmail.com",
                 "george@gmail.com",
                 "alice@gmail.com"         );
-
         HashSet<String> uniqueMails = new HashSet<>(newsletterMails);
         uniqueMails.addAll(productUpdateMails);
         System.out.println("Unique Mails: "+ uniqueMails);
@@ -89,7 +87,6 @@ class Player{
     String name;
     int score;
     int level;
-
     public Player(String name, int score, int level) {
         this.name = name;
         this.score = score;
