@@ -81,17 +81,22 @@ fields: name (String), score (int), and level (int).
 3. If levels are also equal, sort alphabetically by name.
 • Key Concept: TreeSet or Collections.sort, Comparator, thenComparing.
 
+
 package Collections;
+
 import java.util.*;
-class Player{
+
+class Player {
     String name;
     int score;
     int level;
+
     public Player(String name, int score, int level) {
         this.name = name;
         this.score = score;
         this.level = level;
     }
+
     public String getName() {
         return name;
     }
@@ -116,12 +121,15 @@ class Player{
         this.level = level;
     }
 
-    @Override     public String toString() {
-        return                 "name='" + name + '\'' +
-                ", score=" + score +
-                ", level=" + level;
+    @Override
+    public String toString() {
+        return
+                "name='" + name + '\'' +
+                        ", score=" + score +
+                        ", level=" + level;
     }
 }
+
 public class ComparatorLogicProblem {
 
     public static void main(String[] args) {
@@ -131,16 +139,19 @@ public class ComparatorLogicProblem {
                         .thenComparing(Player::getName)
         );
         players.addAll(Arrays.asList(
-                new Player("ravi",120,5),
-                new Player("anil",150,6),
-                new Player("vamsi",150,6),
-                new Player("kumar",120,7),
-                new Player("suresh",150,5)
+                new Player("ravi", 120, 5),
+                new Player("anil", 150, 6),
+                new Player("vamsi", 150, 6),
+                new Player("kumar", 120, 7),
+                new Player("suresh", 150, 5)
 
         ));
         System.out.println(players);
+
     }
 }
+
+
 
 ===========================================================================================================================
 
